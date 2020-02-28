@@ -14,8 +14,8 @@ export default function SearchForm(props) {
              id="site-search"
              name="name"
              onChange={handleChanges}
-      />
-     <button>Search</button>
+             placeholder="Search"
+      />     
     </section>
   );
 }

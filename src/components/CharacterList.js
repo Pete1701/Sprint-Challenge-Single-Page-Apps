@@ -34,8 +34,7 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      <SearchForm onSearch={onSearch} />
-      {/* <h2>TODO: `array.map()` over your state here!</h2> */}
+      <SearchForm onSearch={onSearch} />   
       {characters.map((character) => (
         <CharacterCard image={character.image}
                        name={character.name}
