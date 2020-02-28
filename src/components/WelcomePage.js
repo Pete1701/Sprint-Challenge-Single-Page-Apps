@@ -1,16 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Card,  
+  CardBody,
+  CardImg,  
+  CardText,  
+} from "reactstrap";
 
 export default function WelcomePage() {
   return (
-    <section className="welcome-page">
-      <header>
-        <h1>Welcome to the ultimate fan site!</h1>
-        <img
-          className="main-img"
-          src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-          alt="rick"
-        />
-      </header>
-    </section>
+    <Card className="welcome-page">
+      <CardBody>
+        <CardText>Welcome to the ultimate fan site!</CardText>
+        <Link to={`/characters`}>
+          <CardImg
+            className="main-img"
+            src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+            alt="rick"
+          />
+        </Link>
+      </CardBody>
+    </Card>
   );
 }

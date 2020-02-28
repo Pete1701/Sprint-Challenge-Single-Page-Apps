@@ -1,10 +1,21 @@
 import React, { useState } from "react";
 
-export default function SearchForm() {
- 
+export default function SearchForm(props) {
+
+  function handleChanges(event){
+    event.preventDefault();
+    props.onSearch(event.target.value);
+  }
+
   return (
     <section className="search-form">
-     // Add a search form here
+     <label for="site-search"></label>
+      <input type="search"
+             id="site-search"
+             name="name"
+             onChange={handleChanges}
+      />
+     <button>Search</button>
     </section>
   );
 }

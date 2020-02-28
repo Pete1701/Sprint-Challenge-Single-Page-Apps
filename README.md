@@ -29,6 +29,9 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 > Answer:
 
+Generally, client-side routing gives a faster and smoother experience. It's the preferred method because of that.
+Routing between views is faster and smoother. The same data doesn't have to be requester again, and only what actually changes is coming from the server.
+
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
